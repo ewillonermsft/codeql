@@ -443,8 +443,8 @@ The other built-in operations are:
 *   ``BigInt`` arithmetic: binary ``+``, ``-``, ``*``, ``/``, ``%``, unary ``-``,
 *   bitwise operations: ``.bitAnd(BigInt)``, ``.bitOr(BigInt)``,
     ``.bitXor(BigInt)``, ``.bitShiftLeft(int)``, ``.bitShiftRightSigned(int)``,
-    ``.bitNot()``,
-*   aggregates: ``min``, ``max``, (``strict``)\ ``sum``, (``strict``)\ ``count``, ``avg``,
+    ``.bitNot()``, ``.bitLength()``,
+*   aggregates: ``min``, ``max``, (``strict``)\ ``sum``, (``strict``)\ ``count``,
     ``rank``, ``unique``, ``any``.
 *   other: ``.pow(int)``, ``.abs()``, ``.gcd(BigInt)``, ``.minimum(BigInt)``,
     ``.maximum(BigInt)``.

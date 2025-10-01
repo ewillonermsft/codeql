@@ -5,9 +5,10 @@
  * @kind problem
  * @problem.severity warning
  * @id go/missing-error-check
- * @tags reliability
- *       correctness
- *       logic
+ * @tags quality
+ *       reliability
+ *       error-handling
+ *       external/cwe/cwe-252
  * @precision high
  */
 
@@ -21,7 +22,7 @@ predicate isNil(DataFlow::Node node) { node = Builtin::nil().getARead() }
 /**
  * Matches if `call` may return a nil pointer alongside an error value.
  *
- * This is both an over- and under-estimate: over in that we assume opaque functions may use this
+ * This is both an over- and under-estimate: over in that we assume opaque functions may use this
  * convention, and under in that functions with bodies are only recognized if they use a literal
  * `nil` for the pointer return value at some return site.
  */
